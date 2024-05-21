@@ -39,6 +39,10 @@ def google_auth():
     print("Google User:", user)
     return redirect('/index')
 
+@app.route('/predict')
+def predict():
+    pass
+
 @app.route('/index')
 def index():
     return render_template('index.html')
