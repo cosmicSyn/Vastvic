@@ -31,6 +31,18 @@ This repository contains applications developed as part of my upskilling tasks a
   - Uses Google OAuth2 for security.
 - **Technologies Used:** Python, Flask
 
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/20dc3e8e-d2c6-469f-bf14-194cae5bd206)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/69f7b667-cdc0-4eb0-9d5d-5c1e37926bd7)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/be4b6d0d-0df2-433e-a96a-563850a04397)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/e2200c79-92d1-45f1-b64f-a0dfb53c249e)
+
+
+
+
+
 ### Image Segmentation Application 
 - **Description:** An image segmentation application that can handle at least two types of segmentations.
 - **Features:**
