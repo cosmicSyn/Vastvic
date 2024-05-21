@@ -12,17 +12,6 @@ This repository contains applications developed as part of my upskilling tasks a
   - Handles decimal numbers.
   - Allows chaining of multiple operations.
 - **Technologies Used:** Python, Tkinter
-
-![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/a525eede-9476-4fd8-a25c-411a7608ff95)
-
-![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/8dcf649e-d9d2-4343-9c67-4f6393bc23df)
-
-- Handling Syntax Errors
-
-![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/9c0f66ce-7e31-4828-877c-51e4a9719d17)
-
-![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/307292e7-1fe0-4c05-bd78-aa562084b795)
-
 - **User Interface:**
 
 <img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/a525eede-9476-4fd8-a25c-411a7608ff95" width="400">
@@ -61,3 +50,12 @@ This repository contains applications developed as part of my upskilling tasks a
   - Image segmentation using the FCN_ResNet50 deep CNN.
   - Implemented using Flask (avoiding Streamlit).
 - **Technologies Used:** Python, Flask, Pytorch, PIL
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/35d75432-6953-41c7-ae26-2d7c9e0fc895)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/c3f60df1-a250-4a9e-bc0c-6f5c7efaf023)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/0a02d8b0-809a-4642-bb9c-1386aa006541)
+
+
+
