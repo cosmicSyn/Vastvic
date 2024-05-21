@@ -12,10 +12,15 @@ This repository contains applications developed as part of my upskilling tasks a
   - Handles decimal numbers.
   - Allows chaining of multiple operations.
 - **Technologies Used:** Python, Tkinter
+
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/a525eede-9476-4fd8-a25c-411a7608ff95)
+
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/8dcf649e-d9d2-4343-9c67-4f6393bc23df)
+
 - Handling Syntax Errors
+
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/9c0f66ce-7e31-4828-877c-51e4a9719d17)
+
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/307292e7-1fe0-4c05-bd78-aa562084b795)
 
 
