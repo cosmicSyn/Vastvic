@@ -1,24 +1,22 @@
-from flask import Flask, render_template, request, redirect, jsonify, url_for, session, abort
+from flask import Flask, render_template, request, redirect,  url_for, session, abort
+
 import torch
 from torchvision import transforms
 from PIL import Image
 import matplotlib.pyplot as plt
-import cv2
-import numpy as np
-
 from torchvision.io.image import read_image
-from torchvision.models.segmentation import fcn_resnet50, FCN_ResNet50_Weights
 from torchvision.transforms.functional import to_pil_image
 from torchvision.utils import draw_segmentation_masks
-from torchvision.io import read_image
+
 from io import BytesIO
 from PIL import Image
 from io import BytesIO
-import torchvision.transforms as transforms
 
+from torchvision.models.segmentation import fcn_resnet50, FCN_ResNet50_Weights
+t = transforms.Compose([transforms.ToTensor()])
 weights = FCN_ResNet50_Weights.DEFAULT
-model = fcn_resnet50(weights=weights)
-# model.eval()
+transforms = weights.transforms(resize_size=None)
+model = fcn_resnet50(weights=weights, progress=False)
 
 app = Flask(__name__)
 
@@ -29,28 +27,29 @@ def hello_world():
 @app.route("/predict", methods=["POST"])
 def predict():
     image_data = request.files["image"].read()
-    image = Image.open(BytesIO(image_data)).convert("RGB")
-    preprocess = weights.transforms()
-    batch = preprocess(image).unsqueeze(0)
-    # print(batch.shape)
-    # print(batch.dtype)
-    prediction = model(batch)["out"]
-    normalized_masks = prediction.softmax(dim=1)
+    dog1 = Image.open(BytesIO(image_data)).convert("RGB")
+    dog1 = t(dog1)
+    dog_list = [dog1]
+    batch = torch.stack([transforms(d) for d in dog_list])
+    output = model(batch)['out']
+
+    normalized_masks = torch.nn.functional.softmax(output, dim=1)
     num_classes = normalized_masks.shape[1]
-    img1_masks = normalized_masks[0]
-    class_dim = 0
-    img1_all_classes_masks = img1_masks.argmax(class_dim) == torch.arange(num_classes)[:, None, None]
-    masks=img1_all_classes_masks[1:]
-    # print(f"img1_masks shape = {img1_masks.shape}, dtype = {img1_masks.dtype}")
-    # print(f"img1_all_classes_masks = {img1_all_classes_masks.shape}, dtype = {img1_all_classes_masks.dtype}")
-    img_with_all_masks = draw_segmentation_masks(batch[0], masks=img1_all_classes_masks, alpha=0.5)
-    # to_pil_image(img_with_all_masks).show()
-    # print(img_with_all_masks.shape)
-    img_with_all_masks = img_with_all_masks.mul(255).byte().cpu()
-    img_with_all_masks_pil = transforms.ToPILImage()(img_with_all_masks)
-    # Define the path where the image will be saved
+    dog1_masks = normalized_masks[0]
+    class_dim = 1
+    all_classes_masks = normalized_masks.argmax(class_dim) == torch.arange(num_classes)[:, None, None, None]
+    print(f"shape = {all_classes_masks.shape}, dtype = {all_classes_masks.dtype}")
+    # The first dimension is the classes now, so we need to swap it
+    all_classes_masks = all_classes_masks.swapaxes(0, 1)
+
+    dogs_with_masks = [
+        draw_segmentation_masks(img, masks=mask, alpha=.6)
+        for img, mask in zip(dog_list, all_classes_masks)
+    ]
+    
+    final_img = to_pil_image(dogs_with_masks[0])
     output_path = "static/output_image.png"
-    img_with_all_masks_pil.save(output_path)
+    final_img.save(output_path)
     return render_template('index.html',display=True)
     
 if __name__ == "__main__":
