@@ -24,12 +24,16 @@ This repository contains applications developed as part of my upskilling tasks a
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/307292e7-1fe0-4c05-bd78-aa562084b795)
 
 - **User Interface:**
-  <img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/a525eede-9476-4fd8-a25c-411a7608ff95" height="500">
-  <img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/8dcf649e-d9d2-4343-9c67-4f6393bc23df" height="500">
+
+<img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/a525eede-9476-4fd8-a25c-411a7608ff95" width="400">
+  
+<img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/8dcf649e-d9d2-4343-9c67-4f6393bc23df" width="400">
 
 - **Handling Syntax Errors:**
-  <img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/9c0f66ce-7e31-4828-877c-51e4a9719d17" height="500">
-  <img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/307292e7-1fe0-4c05-bd78-aa562084b795" height="500">
+
+<img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/9c0f66ce-7e31-4828-877c-51e4a9719d17" width="400">
+  
+<img src="https://github.com/cosmicSyn/Vastvic/assets/139002106/307292e7-1fe0-4c05-bd78-aa562084b795" width="400">
 
 ### Backend Application with OAuth Integration
 - **Description:** A backend application with OAuth integration for authentication.
