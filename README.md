@@ -39,8 +39,9 @@ This repository contains applications developed as part of my upskilling tasks a
 
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/e2200c79-92d1-45f1-b64f-a0dfb53c249e)
 
+- Printing user info in the terminal
 
-
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/e314deb4-17b7-4140-9600-407c98a0dafb)
 
 
 ### Image Segmentation Application 
