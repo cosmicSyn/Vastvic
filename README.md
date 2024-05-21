@@ -55,7 +55,14 @@ This repository contains applications developed as part of my upskilling tasks a
 
 ![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/c3f60df1-a250-4a9e-bc0c-6f5c7efaf023)
 
-![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/0a02d8b0-809a-4642-bb9c-1386aa006541)
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/e797b709-84c2-41d7-810d-0b7cb7866272)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/63edda79-de24-4864-bdb6-67de42a4b3ef)
+
+![image](https://github.com/cosmicSyn/Vastvic/assets/139002106/6ad99150-f0e2-4529-9aab-1c7489b08594)
+
+
+
 
 
 
